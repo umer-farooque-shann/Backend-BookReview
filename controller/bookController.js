@@ -35,7 +35,7 @@ export const addBook = async (req, res) => {
   }
 };
 
-export const getAllBooks = async (req, res) => {
+export const getAllBook = async (req, res) => {
   try {
     const books = await Book.find(); // Retrieve all books from the database
     res.status(200).json({ books }); // Send the books as a JSON response
